@@ -55,7 +55,7 @@ fun bindStatus(progressBar: ProgressBar, status: HomeViewModel.ApiStatus?) {
 
     }
 }
-@BindingAdapter("button1G","button2R","button2G","button3R","button3G","button4R","button4G","button5R","button5G","button6R","button6G","cart1")
+@BindingAdapter("button1G","button2R","button2G","button3R","button3G","button4R","button4G","button5R","button5G","button6R","button6G","button7R","button7G","button8R","button8G","button9R","button9G","button10R","button10G","cart1")
 fun visibility1(
     button1R: ConstraintLayout,
     button1G: ConstraintLayout,
@@ -69,6 +69,14 @@ fun visibility1(
     button5G: ConstraintLayout,
     button6R: ConstraintLayout,
     button6G: ConstraintLayout,
+    button7R: ConstraintLayout,
+    button7G: ConstraintLayout,
+    button8R: ConstraintLayout,
+    button8G: ConstraintLayout,
+    button9R: ConstraintLayout,
+    button9G: ConstraintLayout,
+    button10R: ConstraintLayout,
+    button10G: ConstraintLayout,
     cartItems: List<CartModel>?
 ) {
     var added1=false
@@ -77,6 +85,10 @@ fun visibility1(
     var added4 =false
     var added5 =false
     var added6 =false
+    var added7 =false
+    var added8 =false
+    var added9 =false
+    var added10 =false
     if (cartItems.isNullOrEmpty()) {
         println("heyy null")
     } else {
@@ -98,6 +110,18 @@ fun visibility1(
             }
             if (items.id == "6") {
                 added6=true
+            }
+            if (items.id == "7") {
+                added7=true
+            }
+            if (items.id == "8") {
+                added8=true
+            }
+            if (items.id == "9") {
+                added9=true
+            }
+            if (items.id == "10") {
+                added10=true
             }
         }
     }
@@ -148,6 +172,38 @@ fun visibility1(
     else{
         button6R.visibility=View.VISIBLE
         button6G.visibility=View.GONE
+    }
+    if (added7){
+        button7R.visibility=View.GONE
+        button7G.visibility=View.VISIBLE
+    }
+    else{
+        button7R.visibility=View.VISIBLE
+        button7G.visibility=View.GONE
+    }
+    if (added8){
+        button8R.visibility=View.GONE
+        button8G.visibility=View.VISIBLE
+    }
+    else{
+        button8R.visibility=View.VISIBLE
+        button8G.visibility=View.GONE
+    }
+    if (added9){
+        button9R.visibility=View.GONE
+        button9G.visibility=View.VISIBLE
+    }
+    else{
+        button9R.visibility=View.VISIBLE
+        button9G.visibility=View.GONE
+    }
+    if (added10){
+        button10R.visibility=View.GONE
+        button10G.visibility=View.VISIBLE
+    }
+    else{
+        button10R.visibility=View.VISIBLE
+        button10G.visibility=View.GONE
     }
 }
 
