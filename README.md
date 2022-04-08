@@ -1,7 +1,7 @@
 # Taller2DSA_Farmacia
  
 ## NOMBRE APP
-* **FARMACIA SV
+* **FARMACIA SV**
  
 ## INTEGRANTES
 
