@@ -7,7 +7,7 @@
 
 ![farmacia](https://user-images.githubusercontent.com/61065201/162346451-1565971e-7cba-4e6b-b883-ec69d103b3ee.png)
 
-## INTEGRANTES
+## INTEGRANTES GRUPO LAB N°G01L
 
 * **Patrick Ernesto Rosales Mendoza**
 * **Kevin Adonay Martínez Cerón** 
