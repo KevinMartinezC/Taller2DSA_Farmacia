@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:text="@{cart.name}"
                 android:textStyle="bold"
-                android:textSize="16sp"
+                android:textSize="15sp"
                 android:textColor="@color/colorAccent"
                 app:layout_constraintStart_toStartOf="@+id/textView5"
                 app:layout_constraintTop_toTopOf="parent"
